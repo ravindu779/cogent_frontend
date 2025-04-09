@@ -119,7 +119,7 @@ export const SPEAKERS = {
       name: "Bahaa Farouk",
       title: "Chief Digital & Data Officer",
       company: "Suez Canal Bank",
-      image: "src/assets/1s.jpg",
+      image: "/src/assets/1s.jpg",
       bio: "Bahaa is graduated in Computer Science 2005, also he holds two masters' degrees in Computer Science and Business Administration, of more than 20 years' experience Information Technology, Telco, Banking & Financial Services, Cloud and Digital Transformation in Egypt, Gulf, and Europe worked for Huawei, HP, Ooredoo, Vodafone, Banque Misr and Currently, at Suez Canal Bank, Chief Transformation Officer in charge of the digital and data transformation adopting best in class solutions and agile operating model."
     },
     {
