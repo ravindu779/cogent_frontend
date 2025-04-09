@@ -127,7 +127,7 @@ export const SPEAKERS = {
       name: "Shehab Moustafa",
       title: "Country Center of Excellence Director",
       company: "Money Fellows",
-      image: "src/assets/2s.jpg",
+      image: "/speakers/2s.jpg",
       bio: "Experienced professional in digital transformation and fintech innovation."
     },
     {
@@ -135,7 +135,7 @@ export const SPEAKERS = {
       name: "Marwan Abouzeid",
       title: "Principal Solutions Consultant & Customer Value Lead, MEA & APAC",
       company: "Finastra",
-      image: "src/assets/3s.jpg",
+      image: "/speakers/3s.jpg",
       bio: "Marwan Abouzeid is a seasoned professional with over 22 years of experience in the Fintech industry. Currently serving as the Principal Solutions Consultant & Customer Value Lead for MEA and APAC at Finastra, Marwan is known for his strategic consulting, customer relationship management, and business development expertise."
     },
     {
@@ -143,7 +143,7 @@ export const SPEAKERS = {
       name: "Karim El Mourabet",
       title: "Solution Consulting Director - MEA",
       company: "Finastra",
-      image: "src/assets/4s.jpg",
+      image: "/speakers/4s.jpg",
       bio: "Karim El Mourabet leads the Retail Banking Solution Consulting team at Finastra, covering Middle East & Africa. He has over 12 years' experience in retail banking software implementation and consulting and working with Digital Banks."
     },
     {
@@ -151,7 +151,7 @@ export const SPEAKERS = {
       name: "Siobhan Byron",
       title: "Executive Vice President, Universal Banking",
       company: "Finastra",
-      image: "src/assets/5s.jpg",
+      image: "/speakers/5s.jpg",
       bio: "Siobhan oversees Universal Banking, including market leading core banking and digital solutions globally. She has more than 25 years of experience in IT and channel management, as well as leading and growing prominent technology companies across financial services, insurance, manufacturing, and public sectors."
     },
     {
@@ -159,7 +159,7 @@ export const SPEAKERS = {
       name: "Narendra Mistry",
       title: "Chief Product and Technology Officer Universal Banking",
       company: "Finastra",
-      image: "src/assets/6s.jpg",
+      image: "/speakers/6s.jpg",
       bio: "Narendra leads the global product and technology organization for Universal Banking as the Chief Product and Technology Officer (CPTO). Narendra has been in the financial software industry for more than 25 years and his career with Finastra spans more than 13 years in various leadership roles."
     },
     {
@@ -167,7 +167,7 @@ export const SPEAKERS = {
       name: "Ahmed Hamdy Bahey El Din",
       title: "Head of Information Technology",
       company: "Incolease",
-      image: "src/assets/7s.png",
+      image: "/speakers/7s.png",
       bio: "Ahmed Hamdy is a results-driven IT professional with extensive experience leading IT departments and delivering innovative solutions. As the IT Head at Incolease, he manages all IT operations, ensuring strategic alignment, process optimization, and efficient resource management."
     },
     {
@@ -175,7 +175,7 @@ export const SPEAKERS = {
       name: "Emad Shawky Habib Hanna",
       title: "Chief Data and Analytics Officer",
       company: "Banque Misr",
-      image: "src/assets/8s.png",
+      image: "/speakers/8s.png",
       bio: "Experienced data and analytics leader with expertise in banking technology."
     },
     {
@@ -183,7 +183,7 @@ export const SPEAKERS = {
       name: "Heba Yehia",
       title: "Head of Digital Products",
       company: "Arab African International Bank",
-      image: "src/assets/9s.jpg",
+      image: "/speakers/9s.jpg",
       bio: "Digital banking expert with extensive experience in product development."
     },
     {
@@ -191,7 +191,7 @@ export const SPEAKERS = {
       name: "Hamid Nirouzad",
       title: "Managing Director - Africa",
       company: "Finastra Universal",
-      image: "src/assets/10s.jpg",
+      image: "/speakers/10s.jpg",
       bio: "Hamid Nirouzad is a seasoned professional in the fintech industry. He began his career at National Westminster Bank in the UK before joining Midas-Kapiti in 1994. Throughout his tenure at Finastra, Hamid has played a pivotal role in various business aspects across Europe and the MEA regions."
     },
     {
@@ -199,7 +199,7 @@ export const SPEAKERS = {
       name: "Rudy Kawmi",
       title: "Managing Director - Middle East, Africa & Asia-Pacific",
       company: "Finastra Universal Banking",
-      image: "src/assets/11s.jpg",
+      image: "/speakers/11s.jpg",
       bio: "Rudy Kawmi oversees the Retail Banking business across the Middle East, Africa, and Asia-Pacific regions at Finastra. With a career dedicated to financial technology, Rudy has collaborated with banks on numerous digital transformation initiatives."
     },
     {
@@ -207,7 +207,7 @@ export const SPEAKERS = {
       name: "Matthew Hughes",
       title: "Global Client Executive Partner, SCB",
       company: "Atos",
-      image: "src/assets/icon.jpg",
+      image: "/speakers/icon.jpg",
       bio: "Matthew Hughes is a seasoned professional with over 25 years of experience in the financial services and insurance sectors. Matthew worked for 17 years at Royal Bank of Scotland in various leadership roles."
     }
   ],
