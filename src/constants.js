@@ -219,27 +219,27 @@ export const BENEFITS = {
   items: [
     {
       id: 1,
-      icon: "src/assets/Icon_1h.png",
+      icon: "/speakers/Icon_1h.png",
       text: "Learn from industry experts"
     },
     {
       id: 2,
-      icon: "src/assets/Icon_2f.png",
+      icon: "/speakers/Icon_2f.png",
       text: "Stay ahead of emerging trends"
     },
     {
       id: 3,
-      icon: "src/assets/Icon_3ff.png",
+      icon: "/speakers/Icon_3ff.png",
       text: "Connect with fellow banking professionals"
     },
     {
       id: 4,
-      icon: "src/assets/Icon_4d.png",
+      icon: "/speakers/Icon_4d.png",
       text: "Enhance your knowledge, skills, and network"
     },
     {
       id: 5,
-      icon: "src/assets/Icon_5f.png",
+      icon: "/speakers/Icon_5f.png",
       text: "Share your expertise and experience with peers"
     }
   ]
