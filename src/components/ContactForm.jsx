@@ -1,6 +1,30 @@
 import React, { useState, useEffect } from "react";
 import { FORM_CONFIG } from "../constants";
 
+const submitRegistration = async (formData) => {
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+  
+  try {
+    const response = await fetch(`${API_URL}/api/registrations`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData)
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.message || 'Registration failed');
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error('Submission error:', error);
+    throw error;
+  }
+};
+
 export default function ContactForm() {
   const [formData, setFormData] = useState({});
   const [errors, setErrors] = useState({});
@@ -13,8 +37,8 @@ export default function ContactForm() {
   }, []);
 
   const handleChange = (id, value) => {
-    setFormData({ ...formData, [id]: value });
-    setErrors({ ...errors, [id]: null });
+    setFormData(prev => ({ ...prev, [id]: value }));
+    setErrors(prev => ({ ...prev, [id]: null }));
   };
 
   const validate = () => {
@@ -44,25 +68,11 @@ export default function ContactForm() {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch('http://localhost:5000/api/registrations', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-      
-      if (!response.ok) {
-        throw new Error(data.message || 'Registration failed');
-      }
-
+      await submitRegistration(formData);
       alert(FORM_CONFIG.successMessage);
       setFormData({});
       setAgreed(false);
     } catch (error) {
-      console.error('Error submitting form:', error);
       alert(`Error: ${error.message}`);
     } finally {
       setIsSubmitting(false);
@@ -127,7 +137,7 @@ export default function ContactForm() {
             <label htmlFor="agreement" className="text-sm text-gray-300">
               {FORM_CONFIG.privacyText}{" "}
               <a href={FORM_CONFIG.privacyLink} className="underline text-pink-400" target="_blank" rel="noopener noreferrer">
-                Cogent Solutions Privacy Policy
+                Privacy Policy
               </a>.
             </label>
           </div>
